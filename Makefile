@@ -34,7 +34,7 @@ run:
 test:
 	$(JAVA) -cp $(CLASSPATH) org.junit.runner.JUnitCore \
         network.PacketTest \
-        network.RouterTest \
+        network.MainTest \
         network.FlowControlTest \
         network.NetworkSimulatorTest \
         network.RoutingTableTest
