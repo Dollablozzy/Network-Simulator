@@ -1,0 +1,66 @@
+Compile command
+
+make compile
+
+javac -d bin -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar src/network/*.java test/network/*.java
+
+
+
+
+
+Run command
+
+make run
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar network.Main
+
+
+Run all of the test together
+
+make test
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.PacketTest network.RouterTest network.FlowControlTest network.NetworkSimulatorTest network.RoutingTableTest
+
+
+Test command for PacketTest.java
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.PacketTest
+
+Test command for RouterTest.java
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.RouterTest
+
+Test command for FlowcontrolTest.java
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.FlowControlTest
+
+
+Test command for NetworkSimulatorTest
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.NetworkSimulatorTest
+
+
+Test command for RoutingTabaleTest
+
+java -cp bin;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar org.junit.runner.JUnitCore network.RoutingTableTest
+
+
+Clean all compiled files
+
+make clean
+
+
+Complie + Run command
+
+
+make allrun
+
+
+
+
+
+
+
+
+
+
